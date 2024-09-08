@@ -170,11 +170,22 @@ BOARD_AVB_BOOT_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_BOOT_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 3
 
+# Display
+TARGET_SCREEN_DENSITY :=480
+
 # VNDK
 BOARD_VNDK_VERSION := current
+
+# Vintf
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/vintf/compatibility_matrix.device.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/manifest.xml
 
 # Bootloader Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := corot
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
+
+# Inherit from the proprietary version
+-include vendor/xiaomi/corot/BoardConfigVendor.mk
 
