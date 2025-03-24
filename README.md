@@ -19,3 +19,6 @@ Positioning | GPS, A-GPS, BeiDou, Glonass, Galileo, NavIC
 
 ## Device picture
 ![corot](https://i02.appmifile.com/329_operator_sg/14/08/2023/3fcfdc0e83081349795e70056be19e35.png)
+## To rebase
+- https://github.com/Xiaomi-corot-Development/android_device_xiaomi_corot
+- https://github.com/Xiaomi-corot-Development/android_device_xiaomi_mt6895-common
