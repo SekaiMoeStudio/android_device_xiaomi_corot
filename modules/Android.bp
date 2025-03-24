@@ -1,0 +1,11 @@
+sh_binary {
+    name: "init.insmod.sh",
+    src: "init.insmod.sh",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.insmod.mt6985.cfg",
+    src: "init.insmod.mt6985.cfg",
+    vendor: true,
+}
