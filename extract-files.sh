@@ -8,8 +8,8 @@
 
 set -e
 
-DEVICE=corot
-VENDOR=xiaomi
+export DEVICE=corot
+export VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
